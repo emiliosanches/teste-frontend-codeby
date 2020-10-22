@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #383838;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+header#presentation {
+    width: 100vw;
+    height: 100vh;
+    background: url(./assets/landing-image.png) no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header#presentation img {
+    width: 15%;
+}
+
+header#presentation span {
+    max-width: 50vw;
+    text-align: center;
+    font-size: 62px;
+    color: white;
+}
+
+header#presentation button {
+    padding: 10px 50px;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    background: white;
+}
+
+main {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+main h1 {
+    font-size: 62px;
+}
+
+main span#legend {
+    font-size: 21px;
+    margin-bottom: 70px;
+}
+
+main div#grid {
+    width: 100%;
+    height: calc(100vw - 70px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 15px; row-gap: 15px;
+    grid-template-areas: 
+                        'nature daily daily'
+                        'together together together'
+                        'analysis analysis pictures';
+}
+
+main div#grid div {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main div#grid div * {
+    color: white;
+}
+
+main div#grid div h1 {
+    font-size: 62px;
+}
+
+main div#grid div span {
+    font-size: 24px;
+}
+
+main div#grid #nature {
+    background: url(./assets/nature.png);
+    grid-area: nature;
+}
+
+main div#grid #daily {
+    background: url(./assets/daily.png);
+    grid-area: daily;
+}
+
+main div#grid #together {
+    background: url(./assets/together.png);
+    grid-area: together;
+    justify-content: center;
+}
+
+main div#grid #analysis {
+    background: url(./assets/analysis.png);
+    grid-area: analysis;
+    align-items: flex-end;
+}
+
+main div#grid #pictures {
+    background: url(./assets/pictures.png);
+    grid-area: pictures;
+    align-items: flex-end;    
+}
+
+#growth-plans {
+    margin-top: 70px;
+    padding: 35px;
+}
+
+#growth-plans > div {
+    transform: translateY(100%);
+}
+
+#growth-plans h1 {
+    font-size: 62px;
+}
+
+#growth-plans span {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+#chart {
+    display: flex;
+    align-items: flex-end;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    margin: auto 10px 0;
+}
+
+.plan .info {
+    background: #005499;
+    padding: 20px;
+}
+
+.plan .info h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.plan .info h4 {
+    font-size: 24px;
+    color: white;
+}
+
+.plan .description-container {
+    background: #0088ED;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.plan .description-container .plan-description {
+    font-size: 16px;
+    color: white;
+}
+
+#p150 .description-container {
+    padding-top: 100px;
+}
+#p200 .description-container {
+    padding-top: 200px;
+}
+#p250 .description-container {
+    padding-top: 300px;
+}
+#p300 .description-container {
+    padding-top: 400px;
+}
+
+#p350 .description-container {
+    padding-top: 500px;
+}
